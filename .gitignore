@@ -168,3 +168,4 @@ wandb/
 
 # Container
 *.sif
+/data/

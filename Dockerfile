@@ -43,8 +43,8 @@ RUN pip install --no-cache-dir hydra-core wandb
 COPY . .
 
 # requirements.txt がもしあれば、それを使ってインストール (コメントアウトされています)
-# COPY requirements.txt .
-# RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 # （オプション）その他の依存ライブラリがあればここに追加
 # RUN pip install --no-cache-dir ...
