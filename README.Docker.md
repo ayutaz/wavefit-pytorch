@@ -15,3 +15,7 @@ docker run --gpus all --rm -it `
   -w "${env:ROOT_DIR_CONT}" `
   wavefit-train-env bash
 ```
+
+## データセットの準備 (LibriTTS 等)
+
+コンテナ内で `setup_dataset_inside_container.sh` を実行すると、LibriTTS コーパスを自動でダウンロード・展開できます。
